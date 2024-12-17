@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Dev-mode</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 586 Scholar
+
+https://templatemo.com/tm-586-scholar
+
+-->
+<style>
+/* กำหนดสีเริ่มต้นของลิงก์ทั้งหมด */
+.event_filter a {
+  color: #333;          /* สีตัวอักษรปกติ */
+  text-decoration: none; /* ไม่มีเส้นใต้ */
+  padding: 10px;         /* ระยะห่าง */
+  transition: color 0.3s ease; /* เพิ่มการเปลี่ยนแปลงสีเมื่อโฮเวอร์ */
+}
+
+/* เมื่อลิงก์เป็น active หรือถูกเลือก */
+.event_filter a.is_active {
+  color: #fff;              /* สีตัวอักษรของลิงก์ที่ active */
+  background-color: #9ABF80; /* สีพื้นหลังของลิงก์ที่ active */
+  border-radius: 50px;        /* ทำให้มุมของลิงก์มีความโค้ง */
+}
+
+/* เมื่อโฮเวอร์บนลิงก์ */
+.event_filter a:hover {
+  color: #c9d9bf; /* เปลี่ยนสีตัวอักษรเมื่อโฮเวอร์ */
+  border-radius: 50px;
+  background-color: rgba(0, 123, 255, 0.1); /* สีพื้นหลังเมื่อโฮเวอร์ */
+}
+
+.events_item .thumb img {
+  width: 170px;   /* กำหนดความกว้างของรูปภาพ */
+  height: 170px;  /* กำหนดความสูงของรูปภาพ */
+  object-fit: cover; /* ให้รูปครอบคลุมพื้นที่ที่กำหนดโดยไม่บิดเบี้ยว */
+}
+
+.event_outer {
+    cursor: pointer; /* เปลี่ยน cursor เป็นรูปมือเมื่อ hover */
+  }
+
+
+</style>
+  </head>
+
+
+
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>Dev</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Serach Start ***** -->
+                    <div class="search-input">
+                      <form id="search" action="#">
+                       
+                      </form>
+                    </div>
+                    <!-- ***** Serach Start ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="#top" class="active">หน้าหลัก</a></li>
+                      <li class="scroll-to-section"><a href="#team">สมาชิก</a></li>
+                      <li class="scroll-to-section"><a href="#courses">งาน</a></li>
+                      <!-- <li class="scroll-to-section"><a href="#courses">Courses</a></li>
+                      <li class="scroll-to-section"><a href="#events">Events</a></li> -->
+                      
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="item item-1">
+              <div class="header-text">
+                <span class="category">งานส่วนที่ 1</span>
+                <h2>Desktop Application</h2>
+                
+                <div class="buttons">
+                  <div class="main-button">
+                  </div>
+                  <div class="icon-button">
+                    <a href="#"><i class="fa fa-play"></i> ตัวอย่างงาน</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="item item-2">
+              <div class="header-text">
+                <span class="category">งานส่วนที่ 2</span>
+                <h2>Web Application</h2>
+               
+                <div class="buttons">
+                  <div class="main-button">
+                    
+                  </div>
+                  <div class="icon-button">
+                    <a href="#"><i class="fa fa-play"></i> ตัวอย่างงาน</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item-3">
+              <div class="header-text">
+                <span class="category">งานส่วนที่ 3</span>
+                <h2>Mobile Application</h2>
+               
+                <div class="buttons">
+                  <div class="main-button">
+                   
+                  </div>
+                  <div class="icon-button">
+                    <a href="#"><i class="fa fa-play"></i> ตัวอย่างงาน</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="team section" id="team">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- บน 3 คน -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-01.png" alt="">
+              
+              <h4>ARM</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-02.png" alt="">
+             
+              <h4>AUM</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-03.png" alt="">
+             
+              <h4>LOVE</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- ล่าง 2 คน -->
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-04.png" alt="">
+             
+              <h4>PING</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-05.png" alt="">
+      
+              <h4>PRAE</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="section courses" id="courses" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>TEAM DEV</h6>
+            <h2>งานที่รับผิดชอบ</h2>
+          </div>
+        </div>
+      </div>
+      <ul class="event_filter">
+        <li>
+          <a class="is_active" href="#!" data-filter="*">ทั้งหมด</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".design">Desktop Application
+          </a>
+        </li>
+
+        <li>
+          <a href="#!" data-filter=".develops">Web (ARM)</a>
+        </li>
+
+
+        <li>
+          <a href="#!" data-filter=".development">Web (AUM)</a>
+        </li>
+
+        <li>
+          <a href="#!" data-filter=".devs">Web (LOVE)</a>
+        </li>
+
+        <li>
+          <a href="#!" data-filter=".develop">Web (PING)</a>
+        </li>
+
+        <li>
+          <a href="#!" data-filter=".dev">Web (PRAE)</a>
+        </li>
+
+        <li>
+          <a href="#!" data-filter=".wordpress">Mobile Application
+          </a>
+        </li>
+      </ul>
+
+
+      <div class="row event_box">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/1SPL.png" alt=""></a>
+              <span class="category">ARM</span>
+            </div>
+            <div class="down-content">
+              <h4>SPL โรงเรียน</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/4Library.png" alt=""></a>
+              <span class="category">ARM</span>
+            </div>
+            <div class="down-content">
+              <h4>โปรแกรมห้องสมุด</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/5Phonics.png" alt=""></a>
+              <span class="category">ARM</span>
+            </div>
+            <div class="down-content">
+              <h4>โปรแกรม Phonics for fun 1 - 3</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/6ebook.png" alt=""></a>
+              <span class="category">ARM</span>
+            </div>
+            <div class="down-content">
+              <h4>หนังสือนิทานอิเล็กทรอนิกส์ พัฒนาทักษะเด็กปฐมวัย (eBook)</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/7Log.png" alt=""></a>
+              <span class="category">ARM</span>
+            </div>
+            <div class="down-content">
+              <h4>โปรแกรมดู Log</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/8Myenglish.png" alt=""></a>
+              <span class="category">ARM</span>
+            </div>
+            <div class="down-content">
+              <h4>My English 1 - 6</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/3SmartS.png" alt=""></a>
+              <span class="category">ARM</span>
+            </div>
+            <div class="down-content">
+              <h4>ระบบบริหารจัดการห้องเรียนอัจฉริยะ SmartS Classroom</h4>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/1MarionD.png" alt=""></a>
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4>Marion D</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/2DashBoard.png" alt=""></a>
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4>Dashboard (DBIS)</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/3SmartTimeAttendance.png" alt=""></a>
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4>SmartS Time Attendance</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/4SmartTimeMonkey.png" alt=""></a>
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4>SmartS Time (Monkey)</h4>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 develops">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/1ac.png" alt="" style="width: 150px; height: auto;"></a>
+
+              <span class="category">ARM</span>
+            </div>
+            <div class="down-content">
+              <h4>เว็บไซต์วิชาการ</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/1ac.png" alt="" style="width: 150px; height: auto;"></a>
+              <span class="category">AUM</span>
+            </div>
+            <div class="down-content">
+              <h4>เว็บไซต์ Smarts MAS</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/2ed.ico" alt="" style="width: 150px; height: 130px;"></a>
+              <span class="category">AUM</span>
+            </div>
+            <div class="down-content">
+              <h4>เว็บไซต์ Smart E-document</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/3sc.png" alt="" style="width: 150px; height: auto;"></a>
+              <span class="category">AUM</span>
+            </div>
+            <div class="down-content">
+              <h4>เว็บไซต์ SmartS Student Care System</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/4aca.png" alt="" style="width: 150px; height: auto;"></a>
+              <span class="category">AUM</span>
+            </div>
+            <div class="down-content">
+              <h4> เว็บไซต์ อาชีวะ</h4>
+            </div>
+          </div>
+        </div>
+        
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 develops develop devs">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/none-icon-1.jpg" alt="" style="width: 200px; height: auto;"></a>
+              <span class="category">PING/ARM/LOVE</span>
+            </div>
+            <div class="down-content">
+              <h4> เว็บไซต์ Personalized Smart School</h4>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 develop">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/3ps.png" alt="" style="width: 150px; height: auto;"></a>
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4> เว็บไซต์ บุคลากร (SmartS Personal System)</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 develop">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/4pb.png" alt="" style="width: 150px; height: auto;"></a>
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4>เว็บไซต์ งบประมาณ (SmartS Plan&Budget System)</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 develop">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/5rp.png" alt="" style="width: 150px; height: auto;"></a>
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4>เว็บไซต์ระบบรายงาน (SmartS Report System)</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 develop">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/6spl.png" alt="" style="width: 150px; height: auto; margin-top: 30px;"></a>
+
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4>เว็บไซต์ QA</h4>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 develop">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/7ic.png" alt="" style="width: 150px; height: auto;"></a>
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4>เว็บไซต์ iContents (iC)</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 develop">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/8am.png" alt="" style="width: 150px; height: auto;"></a>
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4>เว็บไซต์ งานปกครอง (SmartS Administrative System)</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 develop">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/9db.png" alt="" style="width: 150px; height: auto;"></a>
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4>เว็บไซต์ Dashboard <br> (Db)</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 develop">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/10ec.png" alt="" style="width: 150px; height: auto;"></a>
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4>เว็บไซต์ ระบบสารสนเทศสำหรับผู้บริหาร (Ec)</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 develop">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/11ebook.png" alt="" style="width: 150px; height: auto;"></a>
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4>Ebook</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 develop">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/none-icon-1.jpg" alt="" style="width: 200px; height: auto;"></a>
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4>SSO Logs</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 develop">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/2SSO.png" alt="" style="width: 200px; height: 150px;"></a>
+              <span class="category">PING</span>
+            </div>
+            <div class="down-content">
+              <h4> เว็บไซต์ SSO (สุราษฯ)</h4>
+            </div>
+          </div>
+        </div>
+  
+
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 dev">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/1smart.png" alt="" style="width: 300px; height: 150px;"></a>
+              <span class="category">PRAE</span>
+            </div>
+            <div class="down-content">
+              <h4> Smart Phonics (ver. รวม 60 เรื่อง)</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 dev">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/2thai.png" alt="" style="width: 300px; height: 150px;"></a>
+              <span class="category">PRAE/PING</span>
+            </div>
+            <div class="down-content">
+              <h4> ภาษาไทย ภาษาสนุก</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 dev">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/3thaiplat.png" alt="" style="width: 300px; height: 150px;"></a>
+              <span class="category">PRAE</span>
+            </div>
+            <div class="down-content">
+              <h4> แพลตฟอร์มการเรียนรู้ภาษาไทย </h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 dev">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/3ENGplat.png" alt="" style="width: 300px; height: 150px;"></a>
+              <span class="category">PRAE</span>
+            </div>
+            <div class="down-content">
+              <h4> แพลตฟอร์มการเรียนรู้ภาษาอังกฤษ
+                 </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 dev">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/4phonic3level.png" alt="" style="width: 300px; height: 150px;"></a>
+              <span class="category">PRAE</span>
+            </div>
+            <div class="down-content">
+              <h4> Smart Phonics (Ver. แยก 3 Level)</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 dev">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/5EngworLD.png" alt="" style="width: 300px; height: 150px;"></a>
+              <span class="category">PRAE</span>
+            </div>
+            <div class="down-content">
+              <h4> EngworLD</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 dev">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/6math.png" alt="" style="width: 300px; height: 150px;"></a>
+              <span class="category">PRAE</span>
+            </div>
+            <div class="down-content">
+              <h4>แพลตฟอร์มการเรียนรู้คณิตศาสตร์</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 devs">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/1fc.png" alt="" style="width: 150px; height: auto;"></a>
+              <span class="category">LOVE</span>
+            </div>
+            <div class="down-content">
+              <h4>SmartS Finance and Accounting System (ระบบการเงินและบัญชี)</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 devs">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/2gr.png" alt="" style="width: 150px; height: auto;"></a>
+              <span class="category">LOVE</span>
+            </div>
+            <div class="down-content">
+              <h4>SmartS General System (ระบบบริหารทั่วไป)</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 devs">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/mode.png" alt="" style="width: 240px; height: 150px;"></a>
+              <span class="category">LOVE</span>
+            </div>
+            <div class="down-content">
+              <h4>Web Application Mode solutions</h4>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 devs">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/Nasan.png" alt="" style="width: 240px; height: 150px;"></a>
+              <span class="category">LOVE</span>
+            </div>
+            <div class="down-content">
+              <h4>Web Application Nasan</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 devs">
+          <div class="events_item">
+            <div class="thumb">
+            </div>
+            <div class="down-content">
+              <h4>งานอื่น ๆ</h4>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="section about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-1">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ดูแล Plesk Control Cloud 
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  203.170.190.225 (mode-schoolapp)
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ดูแล Plesk Control Cloud 
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  203.170.190.225 (spl-system)
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ดูแล Direct Admin
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  https://cat17247.lnwhostname.com:2222
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  ปรับแก้เว็บไซต์โรงเรียน จังหวัดนครปฐม
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                   ระบบดูเกรดนักเรียน
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  ปรับแก้เว็บไซต์โรงเรียน จังหวัดลำพูน
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                   ระบบดูเกรดนักเรียน
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  ปรับแก้เว็บไซต์โรงเรียน จังหวัดภูเก็ต
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                   ระบบดูเกรดนักเรียน
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  ปรับแก้เว็บไซต์โรงเรียน จังหวัดระยอง
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  เว็บไซต์และระบบดูเกรดนักเรียน
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Services Website อื่น ๆ
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Smartteach, Booksmile, educator
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  ติดต่อจด Domain
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Nasan
+                </div>
+              </div>
+            </div>
+
+
+            
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <div class="section-heading">
+            <h6>LOVE</h6>
+            <h2>งานอื่น ๆ เพิ่มเติม</h2>
+           
+            <div class="main-button">
+              <a href="#">ดังนี้</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ 
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>ใช้สำหรับประชุมประจำปี 2567 TEAM DEV MODE SOLUTIONS
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // เมื่อคลิกที่ element ที่มี class "event_outer"
+      $(".event_outer").click(function(){
+        // เลื่อนหน้าไปยัง section ที่มี class "about-us"
+        $("html, body").animate({
+          scrollTop: $(".section.about-us").offset().top
+        }, 1000); // 1000ms หรือ 1 วินาที
+      });
+    });
+  </script>
+  
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
