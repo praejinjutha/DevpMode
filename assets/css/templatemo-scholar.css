@@ -1041,7 +1041,7 @@ Courses Style
 .events_item .thumb span.price {
   position: absolute;
   right: -30px;
-  top: -50px;
+  top: -10px;
   background-color: rgba(122, 106, 216, 0.95);
   width: 130px;
   height: 130px;
@@ -1069,7 +1069,7 @@ Courses Style
 .events_item {
   background-color: #f1f0fe;
   border-radius: 25px;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -1078,6 +1078,48 @@ Courses Style
   justify-content: space-between;
   height: 100%; /* ทำให้ทุก box มีความสูงเต็มที่ */
 } 
+
+.events_item {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.down-content {
+  margin-bottom: 40px; /* เพิ่มระยะห่างระหว่างข้อความและ progress bar */
+}
+
+
+
+.progress-bar {
+  position: absolute;
+  bottom: 10px; /* เลื่อน progress bar ให้อยู่ใกล้ขอบล่าง */
+  left: 10px;
+  right: 10px;
+  height: 30px; /* ปรับความสูงให้สมดุลกับข้อความ */
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.progress-fill {
+  height: 100%; /* ให้เต็มความสูงของ progress-bar */
+  background-color: #4caf50; /* สีของแถบ */
+  color: #fff; /* สีของข้อความ */
+  text-align: center; /* จัดข้อความชิดซ้าย */
+  padding-left: 10px; /* เพิ่มระยะห่างด้านซ้ายสำหรับข้อความ */
+  line-height: 30px; /* จัดข้อความให้อยู่กึ่งกลางแนวตั้ง */
+  font-size: 14px; /* ขนาดตัวอักษร */
+  font-weight: bold; /* ตัวหนา */
+  transition: width 0.3s ease; /* เอฟเฟกต์การเปลี่ยน width */
+  border-radius: 12px 0 0 12px; /* โค้งเฉพาะด้านซ้าย */
+}
+
+
+
+
+
 
 
 
